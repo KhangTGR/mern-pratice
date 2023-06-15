@@ -51,6 +51,8 @@ const registerUser = asyncHandler(async (req, res, next) => {
     res.status(404);
     throw new Error("Invalid user data");
   }
+
+  // res.status(200).json({ message: "Register user" });
 });
 
 // @desc    Logout user
@@ -58,7 +60,12 @@ const registerUser = asyncHandler(async (req, res, next) => {
 // @access  Public
 
 const logoutUser = asyncHandler(async (req, res, next) => {
-  res.status(200).json({ message: "Logout user" });
+  res.cookie("jwt", "", {
+    httpOnly: true,
+    expires: new Date(0),
+  });
+
+  res.status(200).json({ message: "User logged out" });
 });
 
 // @desc    Get user profile
