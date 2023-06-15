@@ -1,8 +1,15 @@
+import { Container } from 'react-bootstrap';
+import Header from './components/Header.jsx';
+import HomeScreen from './screens/HomeScreen.jsx';
+
 const App = () => {
   return (
-    <div>
-      <h1>MERN Auth</h1>
-    </div>
+    <>
+      <Header />
+      <Container className='my-2'>
+        <HomeScreen />
+      </Container>
+    </>
   );
 };
 
