@@ -18,8 +18,9 @@ const ProfileScreen = () => {
     const dispatch = useDispatch();
 
     const [updateProfile, { isLoading }] = useUpdateUserMutation();
-
-
+    {
+        isLoading && <Loader />;
+    }
     const submitHandler = async (e) => {
         e.preventDefault();
         if (password !== confirmPassword) {

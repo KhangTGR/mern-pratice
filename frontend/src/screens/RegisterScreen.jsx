@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useRegisterMutation } from '../slices/usersApiSlice';
 import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
+import Loader from '../components/Loader';
 
 
 const RegisterScreen = () => {
@@ -18,7 +19,9 @@ const RegisterScreen = () => {
     const navigate = useNavigate();
 
     const [register, { isLoading }] = useRegisterMutation();
-
+    {
+        isLoading && <Loader />;
+    }
     const { userInfo } = useSelector((state) => state.auth);
 
     useEffect(() => {

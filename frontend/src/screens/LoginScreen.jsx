@@ -8,10 +8,6 @@ import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
 import Loader from '../components/Loader';
 
-{
-    isLoading && <Loader />;
-}
-
 
 const LoginScreen = () => {
     const [email, setEmail] = useState('');
