@@ -1,9 +1,8 @@
-import connectDB from "./configs/db.js";
-import userRoutes from "./routes/userRoutes.js";
+const connectDB = require("./configs/db.js");
+const userRoutes = require("./routes/userRoutes.js");
 
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 

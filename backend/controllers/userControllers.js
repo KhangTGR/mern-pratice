@@ -1,5 +1,5 @@
-import userModel from "../models/userModel.js";
-import productModel from "../models/productModel.js";
+const userModel = require("../models/userModel.js");
+const productModel = require("../models/productModel.js");
 
 const Stripe = require("stripe");
 
@@ -96,7 +96,7 @@ const createCheckoutSessionUser = async (req, res, next) => {
   }
 };
 
-export {
+module.exports = {
   signupUser,
   loginUser,
   uploadProductUser,
