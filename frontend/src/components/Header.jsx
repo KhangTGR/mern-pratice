@@ -12,6 +12,7 @@ import { BsCartFill } from "react-icons/bs"
 import { useState } from 'react';
 
 const Header = () => {
+    // Show Menu function
     const [showMenu, setShowMenu] = useState(false);
     const handleShowMenu = () => {
         setShowMenu(preve => !preve);
@@ -48,9 +49,9 @@ const Header = () => {
                             <HiOutlineUserCircle></HiOutlineUserCircle>
                         </div>
                         {
-                            showMenu && <div className='absolute right-2 bg-white py-2  shadow drop-shadow-md flex flex-col min-w-[120px] text-center'>
-                                <p className='whitespace-nowrap cursor-pointer px-2'>New Product</p>
-                                <p className='whitespace-nowrap cursor-pointer px-2'>Login</p>
+                            showMenu && <div className='absolute right-2 bg-white  shadow drop-shadow-md flex flex-col min-w-[120px] text-center'>
+                                <Link to={"newproduct"} className='whitespace-nowrap cursor-pointer py-1 px-2 hover:bg-slate-100'>New Product</Link>
+                                <Link to={"login"} className='whitespace-nowrap cursor-pointer py-1 px-2 hover:bg-slate-100'>Login</Link>
                             </div>
                         }
 
