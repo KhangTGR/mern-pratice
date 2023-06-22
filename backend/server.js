@@ -5,7 +5,6 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv").config();
 
-
 const PORT = process.env.PORT || 5000;
 
 const app = express();
@@ -18,6 +17,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use("/", userRoutes);
 
 app.get("/", (req, res, next) => {
-  res.send("Server is running");
+  res.send("Server is running!");
 });
 
+app.listen(PORT, () => console.log("server is running at port : " + PORT));
