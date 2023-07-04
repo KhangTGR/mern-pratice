@@ -1,6 +1,6 @@
 ### Exercise Source Link
 
-- Author: [`Dynamic Coding with Amit`](https://www.youtube.com/@DynamicCodingwithAmit)
-- Name: **Build a COMPLETE Fullstack ecommerce Responsive MERN App | React, Redux, Nodejs, MongoDB, Express**
-- Source: [`YouTube`](https://www.youtube.com/watch?v=JFCQLhSMjtM), [`GitHub`](https://github.com/IsAmitprajapati/-Build-a-COMPLETE-Fullstack-ecommerce-Responsive-MERN-App-React-Redux-Nodejs-MongoDB-Express)
-- Date: *Jun 22, 2023*
+- Author: [`EdRoh`](https://www.youtube.com/@EdRohDev)
+- Name: **Build a MERN React Admin Dashboard | Redux Toolkit Query, Backend Focus, Deployment, Data Modeling**
+- Source: [`YouTube`](https://www.youtube.com/watch?v=0cPCMIuDk2I), [`GitHub`](https://github.com/ed-roh/fullstack-admin/tree/master)
+- Date: *Jul 4, 2023*
